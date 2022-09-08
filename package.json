@@ -1,0 +1,26 @@
+{
+    "name": "hello_app",
+    "version": "0.0.1-SNAPSHOT",
+    "description": "hello app",
+    "main": "index.js",
+    "repository": "git@github.com:andrealcantara/ruby-learning.git",
+    "author": "Andr\u00e9 G O Alcantara <andre.alcantara@reitoria.ifpe.edu.br>",
+    "license": "CC-BY-NC-4.0",
+    "private": false,
+    "devDependencies": {
+        "@commitlint/cli": "^17.1.2",
+        "@commitlint/config-conventional": "^17.1.0",
+        "commitizen": "^4.2.5",
+        "cz-conventional-changelog": "3.3.0",
+        "husky": "^8.0.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "scripts": {
+        "commit": "git-cz",
+        "prepare": "husky install"
+    }
+}
